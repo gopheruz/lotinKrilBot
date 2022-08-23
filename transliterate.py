@@ -27,6 +27,8 @@ LATIN_TO_CYRILLIC = {
     'x': 'х', 'X': 'Х',
     'y': 'й', 'Y': 'Й',
     'z': 'з', 'Z': 'З',
+    'o\'': 'ў', 'O\'': 'Ў',
+    'g\'': 'ғ', 'G\'': 'Ғ',
     'ʼ': 'ъ',  # TODO: case?
 }
 LATIN_VOWELS = (
@@ -748,7 +750,7 @@ E_WORDS = {
     'sut(e)mizuvchilar': 'сутэмизувчилар',
     'upa-(e)lik': 'упа-элик',
     'xayr-(e)hson': 'хайр-эҳсон',
-    'qayn(e)gachi': 'қайнэгачи',
+    'qayn(e)gachi': 'қайнэгачи'
 }
 # Not to confuse with ш
 SH_WORDS = {
@@ -1240,6 +1242,8 @@ def to_cyrillic(text):
         # different kinds of apostrophes
         'o‘': 'ў', 'O‘': 'Ў', 'oʻ': 'ў', 'Oʻ': 'Ў',
         'g‘': 'ғ', 'G‘': 'Ғ', 'gʻ': 'ғ', 'Gʻ': 'Ғ',
+        'o\'': 'ў', 'O\'': 'Ў', 'o\'': 'ў', 'O\'': 'Ў',
+        'g\'': 'ғ', 'G\'': 'Ғ', 'g\'': 'ғ', 'G\'': 'Ғ',
     }
     beginning_rules = {
         'ye': 'е', 'Ye': 'Е', 'YE': 'Е',
