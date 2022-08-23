@@ -1,4 +1,3 @@
-from tokenize import Token
 from transliterate import to_cyrillic, to_latin
 import telebot
 TOKEN = '5748814708:AAG6q3-ERB8nhguZI3cEmJxH9OqLI7DzezQ'
