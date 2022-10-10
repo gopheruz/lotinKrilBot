@@ -1174,6 +1174,7 @@ SOFT_SIGN_WORDS = {
     'yuriskonsult': 'юрисконсульт',
     'yakor': 'якорь',
     'yanvar': 'январь',
+    'is\'hoq':'исҳоқ',
 }
 
 CYRILLIC_TO_LATIN = {
