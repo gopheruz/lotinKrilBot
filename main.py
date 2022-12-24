@@ -14,11 +14,9 @@ def echo_all(message):
     if msg == 'исҳоқ':
         a = "is'hoq" 
         bot.reply_to(message, a)
-        print(a)
     else:
         javob = lambda msg: to_cyrillic(msg) if msg.isascii() else to_latin(msg)
         bot.reply_to(message, javob(msg))
-        print(javob(msg))
 bot.polling()
 
 
